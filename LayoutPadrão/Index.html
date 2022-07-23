@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title> Exemplo layout padrão</title>
+       
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+       
+        <link href="layout.css" rel="stylesheet" type="text/css" />
+
+        <style>
+            main{
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+            }
+            h3{
+                text-align: center;
+                background-color: lightgoldenrodyellow;
+            }
+            h6{
+                text-align: justify;
+                /* background-color: lightgray; */
+            }
+           .imagem{
+                text-align: center;
+            }
+            .mel{
+                border: 2px solid #B4FAAB;
+                border-radius: 10px;
+                padding-block: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div><img src = "daisy.png" height="100px" title = "Frango "></div>
+
+                <!-- src = "imagens/flores.png" -- quando a imagem ta dentro de uma pasta dentro da pasta onde ta salvo o html  -->
+                <!-- src = ../../ flores.png -- para voltar duas pastas, a cada ../ volta uma pasta  -->
+
+            <div>
+                <form action=""> <!-- aqui vai entrar a programção (backend), com action-->
+                    <input id = "pesquisa" type="text" placeholder="Digite aqui"> <!-- aqui tu define o que a pessoa vai inserir , é um campo de entrada de texto-->
+                    <input id="bt_pesquisar" type= "button" value = "Pesquisar"/> <!-- adiciona o botão -->
+                </form>
+            </div>
+            <div>
+                <span class="material-symbols-outlined"> <!-- Isso foi pego no fonts.google e pegamos o link no static, tem que por o link que está ali em cima no head e aqui dentro 
+                do espaço que voce quer o span -->
+                emoji_nature
+                </span>
+            </div>
+        </header>
+        <main>
+            <div class = "caixa"> 
+                <h3> Como é feito o mel?</h3>
+                <img class="imagem" src="favo.jfif" height="149px" title="Favo">
+                <p><h6>O mel é formado pela reação dessas substâncias com o néctar coletado das flores. A invertase converte a sacarose – tipo de açúcar contido no néctar – em dois outros açúcares: glicose e frutose. A glicose oxidase, por sua vez, transforma uma pequena quantidade de glicose em ácido glicônico, que torna o mel ácido, protegendo-o de bactérias que o fariam fermentar. Agitando as asas para secar a água, presente em grande quantidade no néctar, as abelhas desidratam o mel, matando outros microorganismos.</h6></p>
+                <div class="mel">
+                    <p>
+                    <h6>1. A fabricação do mel começa com a coleta do néctar nas flores. Ele é guardado em uma bolsa no corpo da abelha e levado para a colméia
+                        <br>
+                        2. Glândulas localizadas na cabeça das abelhas secretam duas en... 
+                        <br>
+                        3. Uma enzima, chamada invertase, transforma o néctar em glicose e frutose. A outra, glicose oxidase, lhe confere acidez, impedindo sua fermentação
+                        <br>
+                        4. Batendo as asas, a abelha seca o excesso de água...
+                    </h6>
+                    </p>
+                </div>
+            </div>
+            <div class = "caixa">02</div>
+            <div class = "caixa">03</div>
+            <div class = "caixa">04</div>
+        </main>
+    </body>
+</html>

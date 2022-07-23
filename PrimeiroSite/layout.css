@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #B4FAAB;
+    background-color: #FFE6F3;
+    height: 100px;
+    align-items: center; /* levar os divs pro meio do header (verticalemnte)*/
+}
+hearder:hover{
+    background-color: saddlebrown;
+}
+#pesquisa{
+    border: 2px solid #9088DB;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 5px; /*para o texto ficar um pouco afastado da caixinha na hora de digitar*/
+}
+#bt_pesquisar{
+    border: 2px solid #FCA374;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 30px;
+    color: papayawhip; /* ele numa a cor do value aqui*/
+    background-color: rebeccapurple; 
+}
+#bt_pesquisar:hover{ /* hover é ao passar o mouse*/
+    background-color: rosybrown;
+}

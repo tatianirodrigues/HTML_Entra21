@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #919191; /*cor do texto*/
+    background-color: #232323;
+    font-family: Arial, Helvetica, sans-serif;  /*tem vírgula e outras fontes para caso ele nao encontre a primeira subtituir pela segunda*/
+}
+div #topo{  /*não precisava desse div na frente mas é bom para especificar, vai formatar o topo que está dentro do div*/
+    width: 100%;
+    height: auto;
+}
+header{
+    width: 980px;
+    height: 50px; /*altura total é 130 pq tem + 80 de padding*/
+    padding: 40px; /*não especificou o padding então ele vai ser colocado nos 4 lados*/
+    margin-left: auto;
+    margin-right: auto;  /*auto dos dois lados assim ele fica no meio do 100% do topo*/
+    display: grid;
+    grid-template-columns: 350px 630px;  /*350 para o primeiro div dentro do header (grupo) e 630 pro segundo (header-contato)*/
+}
+#header-contato{
+    text-align: right; /* a bolinha n vai pq ta alinhando o texto e ela não é texto*/
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0 0 0 0;
+    font-size: 1.5em; /*aqui não está em pixels, isso significa que a fontes vai ser 1.5x o tamanho da fonte padrão (14px que botamos no body)*/
+    font-weight: normal; /*para tirar os negritos, o padrão dessas fontes é negrito*/
+}
+#grupo h1{
+    font-size: 2em;
+}
+#grupo h2{
+    font-size: 1em;
+}
+header #header-contato li{
+    display: inline-block;
+    border-left: 1px solid #C0BAB6;
+    padding: 0 0 0 15px; /*do lado esquerdo vai com 15px. o resto dos lados 0*/
+    margin: 0 0 0 15px; /*do lado esquerdo vai com 15px. o resto dos lados 0*/
+}
+header #header-contato li:first-child{ /*vai ser aplicado so no primeiro li, first-child*/
+    margin: 0;  /*do lado esquerdo vai com 15px. o resto dos lados 0 ---- agora com isso vai sair o tracinho, a margem do primeiro */
+    padding: 0; 
+    border: none;
+}
+#topo, #topo a{
+    color: #C0BAB6;
+    background-color: #333333;
+    text-decoration: none; /*ta tirando a linha que fica embaixo dos links automaticamente*/
+}
+span.material-icons{
+    vertical-align: middle;
+}
+a{
+    color: #FF9900;
+    text-decoration: none;
+}
+nav{ 
+    width: 980px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    /*background-color: #F9EAC3;*/
+}
+nav ul{
+    margin: 0;
+    list-style: none; /*ta tirando a bolinha*/
+    text-transform: uppercase; /*letras em maiusculo*/
+    font-size: 12px;
+}
+nav li{
+    /*float : left -- faria a mesma coisa que o inline block */
+    display: inline-block;
+    margin: 0 30px 0 0; /*margem do lado direito (1- cima, 2- direita, 3- embaixo. 4-esquerda)*/
+}
+nav li a{
+    display: block; /* pra considerar todo o bloco não so o texto no bloco*/
+    padding: 20px 0; /*primeiro numero em cima e embaixo, o segundo direita e esquerda*/
+    font-weight: bold; /*negrito*/
+    /* background-color: peru; */
+}
+nav.home li.link_home a, nav a:hover{   /* hover: mudar a cor quando passar o mouse, por isso so o home ta cinza pq nao tem o hover no link_home, pra saber que ta na pagina home */
+    color: #919191;
+}/*qndo fica no home ta cinza, tem q fazer q qndo tiver em empresa a empresa fique cinza e o home laranja*/
+main{
+    width: 980px;
+    height: 350;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 40px;
+}
+.sectionMain{
+    width: 190px;
+    height: 300px;
+    border: 1px solid #CCC;
+    border-radius: 20px;
+    padding: 10px;
+}
+.sectionMain h1{
+    text-align: center;
+}
+.sectionMain p{
+    line-height: 20px;  /*espaço entre linhas*/
+    text-align: justify;
+}
+.sectionMain article{
+    height: 250px;
+}
+.sectionMain footer{
+    text-align: center;
+}
+.botao{
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .9em;
+    padding: 5px 15px;
+}
+a.botao{ /*elemento a . classe, ta procurando a classe botão que está dentro do elemento a  */
+    color: #FFF;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.botao.saiba_mais_caminhoes{
+    background: linear-gradient(to right, #FF9900, #98BA55);
+    text-shadow: 1px 1px 0 #000; /*que a luz vai "bater" no texto*/
+    border-color: #98BA55;
+}
+.botao.saiba_mais_caminhoes:hover{ /*hover: ao passar o mouse por cima vai trocar as propriedades*/
+    color: #7C9B41;
+    border-color: #7C9B41;                                                                                                                                                                                                                                                                                      
+}
+.botao.saiba_mais_rastreamento{
+    background: linear-gradient(to right, #ff00b3, #5c55ba);
+    text-shadow: 1px 1px 0 #000; /*que a luz vai "bater" no texto*/
+    border-color: #ba5587;
+}
+.botao.saiba_mais_rastreamento:hover{ /*hover: ao passar o mouse por cima vai trocar as propriedades*/
+    color: #68419b;
+    border-color: #41429b;                                                                                                                                                                                                                                                                                      
+}
+.botao.saiba_mais_smartphone{
+    background: linear-gradient(to right, #ff0022, #baa255);
+    text-shadow: 1px 1px 0 #000; /*que a luz vai "bater" no texto*/
+    border-color: #ba55a9;
+}
+.botao.saiba_mais_smartphone:hover{ /*hover: ao passar o mouse por cima vai trocar as propriedades*/
+    color: #41989b;
+    border-color: #5c419b;                                                                                                                                                                                                                                                                                      
+}
+.botao.saiba_mais_avioes{
+    background: linear-gradient(to right, #3700ff, #55bab1);
+    text-shadow: 1px 1px 0 #000; /*que a luz vai "bater" no texto*/
+    border-color: #8155ba;
+}
+.botao.saiba_mais_avioes:hover{ /*hover: ao passar o mouse por cima vai trocar as propriedades*/
+    color: #9b4141;
+    border-color: #419b45;                                                                                                                                                                                                                                                                                      
+}
+#sectionCliente{
+    width: 100%;
+    height: 320px;
+    background-color: #FFF;
+}
+#sectionCliente h1{ /*esse h1 ocupa 100% da largura da section por isso os prox elementos vão pra baixo */
+    text-align: center;
+    padding-top: 10px;
+}
+#conteudoCliente{
+    /*border: 1px solid red;*/
+    height: 200px;
+    width: 760px;
+    margin-left: auto; /*esse margin left e rigth auto centraliza o div*/
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 250px 250px 250px; /*larguras dos elementos que estão dentro do div*/
+}
+#conteudoCliente article{
+    border: 1px solid #CCC;
+    margin: 10px;
+    border-radius: 10px;
+}
+#conteudoCliente figure {
+    margin: 10px;
+}
+#conteudoCliente figcaption {
+    margin-top: 18px;
+}
+#conteudoCliente img{
+    margin-left: auto;
+    margin-right: auto;
+}
+#containnerRodape{
+    height: 350px;
+}
+#rodape{
+    width: 980px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#rodape_nav, #rodape_comentarios, #caixa_formulario{
+    width: 300px;
+    height: 300;
+    float: left;
+    margin: 10PX;    
+}
+.rodape_title{
+    text-align: center;
+}
+#rodape_nav li a{
+    height: 25px;
+}
+#rodape_comentarios li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+#caixa_formulario label{
+    display: block;  /*transformou o label numa caixa e uma caixa ocuoa uma linha*/
+    margin-top: 10px;
+}
+#caixa_formulario input{
+    border-radius: 5px;
+    height: 25px;
+    padding-left: 5px;
+}
+#caixa_formulario textarea{
+    padding-left: 5px;
+    height: 100px;
+    resize: none;
+}
+#caixa_formulario textarea, #caixa_formulario input {
+    color: #FFF;
+    background-color: #333333;
+    border: 1px solid #666666;
+}
+#botoes{
+    display: flex; /*o botão tava do lado e foi pra baixo pq qndo poe o display ele sabe q vai ocupar uma linha do div e manda pra baixo*/
+    margin-top: 10px;
+}
+#caixa_formulario input[type=submit], #caixa_formulario input[type=reset]{ /*dentro da caixa formulario tem um imput do tipo submit, N PODE TER ESPAÇO ENTRE IMPUT E []*/
+    background-color: #FF9900;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #333333;
+}
+#caixa_formulario input[type=submit]{
+    margin-left: 0px;
+}
+#rodape_nav li{ 
+    display: flex; /*os botos do nav ficaram um embaixo do outro */
+    margin: 5px 0;
+}
+#rodape_nav li a{ 
+    padding: 5px 0;
+}
