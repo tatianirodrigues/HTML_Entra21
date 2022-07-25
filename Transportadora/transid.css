@@ -84,6 +84,7 @@ nav li a{
 nav.home li.link_home a, nav a:hover{   /* hover: mudar a cor quando passar o mouse, por isso so o home ta cinza pq nao tem o hover no link_home, pra saber que ta na pagina home */
     color: #919191;
 }/*qndo fica no home ta cinza, tem q fazer q qndo tiver em empresa a empresa fique cinza e o home laranja*/
+
 main{
     width: 980px;
     height: 350;
