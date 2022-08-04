@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title> Transportadora - TRANSID </title>
     <link href="transid.css" rel="stylesheet" type="text/css" />
@@ -31,25 +32,58 @@
             </div>
         </header>
     </div>
-    <nav class="home">
+    <nav class="empresa">
         <!--conteiner-->
         <ul>
             <li class="link_home">
                 <a href="home.html" title="Pagina Inicial"> Home </a>
             </li>
-            <li>
+            <li class="link_empresa">
                 <a href="empresa.html" title="Nova Empresa"> Empresa </a>
             </li>
-            <li>
+            <li class="link_serviço">
                 <a href="servico.html" title="Serviços"> Serviços </a>
             </li>
-            <li>
+            <li class="link_localizacao">
                 <a href="localizacao.html" title="Localização"> Localização</a>
             </li>
         </ul>
     </nav>
-    <main>
-    </main>
+    <main class="empresa">
+        <div class="titulo_quemsomos">
+            <h1> SOBRE A TRANSID </h1>
+        </div>
+        <div id="quem_somos">
+            <div class="texto">
+                <h3>
+                    Somos a maior e mais antiga empresa de transporte de encomendas do Brasil, com anos no mercado e
+                    confiança dos nossos clientes.
+                    A Transid nasceu em 1368, para que os povos indigenas pudessem se comunicar e enviar objetos uns aos
+                    outros.
+                </h3>
+            </div>
+
+            <div>
+                <figure class="caminha">
+                    <img src="caminaotrans.jpeg">
+                </figure>
+            </div>
+        </div>
+        <div id="entrega">
+            <div>
+                <figure class="caminha">
+                    <img src="transentregador.jpeg">
+                </figure>
+            </div>
+            <div class="texto">
+                <h3>
+                    Sempre com um sorriso no rosto, nossos entregadores trabalham entregando felicidade e fazendo seu
+                    dia melhor!
+                </h3>
+            </div>
+        </div>
+        <div class="faixa_branca">
+        </div>
     </main>
     <div id="containnerRodape">
         <footer id="rodape">
@@ -87,22 +121,24 @@
                 </ul>
             </div>
             <div id="caixa_formulario">
-                <form action=""> <!--essas paradas de dentro so usa depois n é pra agr-->
-                    <h2 class="rodape_title" >Contato</h2>
+                <form action="">
+                    <!--essas paradas de dentro so usa depois n é pra agr-->
+                    <h2 class="rodape_title">Contato</h2>
                     <label>Nome:</label>
                     <input type="text" name="nome">
-                    
+
                     <label>Email:</label>
                     <input type="email" name="email">
 
                     <label>Comentário</label>
-                    <textarea name="comentario" maxlength="140"></textarea> <!--140 caractéries-->
+                    <textarea name="comentario" maxlength="140"></textarea>
+                    <!--140 caractéries-->
 
-                    <div id = "botoes">
+                    <div id="botoes">
                         <input type="submit" value="Enviar">
                         <input type="reset" value="Limpar">
                     </div>
-                    
+
                 </form>
             </div>
         </footer>

@@ -81,16 +81,32 @@ nav li a{
     font-weight: bold; /*negrito*/
     /* background-color: peru; */
 }
-nav.home li.link_home a, nav a:hover{   /* hover: mudar a cor quando passar o mouse, por isso so o home ta cinza pq nao tem o hover no link_home, pra saber que ta na pagina home */
+nav a:hover{  
     color: #919191;
-}/*qndo fica no home ta cinza, tem q fazer q qndo tiver em empresa a empresa fique cinza e o home laranja*/
+}
+   
+nav.home li.link_home a{
+    color: #919191;
+}
+nav.empresa li.link_empresa a{
+    color: #919191;
+}
+nav.servico li.link_servico a{ 
+    color: #919191;
+}
+nav.localizacao li.link_localizacao a{
+    color: #919191;
+}
 
 main{
-    width: 980px;
-    height: 350;
+    width: 100%px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+#principal{
+  
+    height: 350;
 
     display: flex;
     flex-direction: row;
@@ -133,36 +149,32 @@ a.botao{ /*elemento a . classe, ta procurando a classe botão que está dentro d
     border-radius: 5px;
 }
 .botao.saiba_mais_caminhoes{
-    background: linear-gradient(to right, #FF9900, #98BA55);
+    background: #FF9900;
     text-shadow: 1px 1px 0 #000; /*que a luz vai "bater" no texto*/
-    border-color: #98BA55;
 }
 .botao.saiba_mais_caminhoes:hover{ /*hover: ao passar o mouse por cima vai trocar as propriedades*/
     color: #7C9B41;
     border-color: #7C9B41;                                                                                                                                                                                                                                                                                      
 }
 .botao.saiba_mais_rastreamento{
-    background: linear-gradient(to right, #ff00b3, #5c55ba);
+    background: #FF9900;
     text-shadow: 1px 1px 0 #000; /*que a luz vai "bater" no texto*/
-    border-color: #ba5587;
 }
 .botao.saiba_mais_rastreamento:hover{ /*hover: ao passar o mouse por cima vai trocar as propriedades*/
     color: #68419b;
     border-color: #41429b;                                                                                                                                                                                                                                                                                      
 }
 .botao.saiba_mais_smartphone{
-    background: linear-gradient(to right, #ff0022, #baa255);
+    background: #FF9900;
     text-shadow: 1px 1px 0 #000; /*que a luz vai "bater" no texto*/
-    border-color: #ba55a9;
 }
 .botao.saiba_mais_smartphone:hover{ /*hover: ao passar o mouse por cima vai trocar as propriedades*/
     color: #41989b;
     border-color: #5c419b;                                                                                                                                                                                                                                                                                      
 }
 .botao.saiba_mais_avioes{
-    background: linear-gradient(to right, #3700ff, #55bab1);
+    background: #FF9900;
     text-shadow: 1px 1px 0 #000; /*que a luz vai "bater" no texto*/
-    border-color: #8155ba;
 }
 .botao.saiba_mais_avioes:hover{ /*hover: ao passar o mouse por cima vai trocar as propriedades*/
     color: #9b4141;
@@ -172,6 +184,7 @@ a.botao{ /*elemento a . classe, ta procurando a classe botão que está dentro d
     width: 100%;
     height: 320px;
     background-color: #FFF;
+    margin-bottom: 0px;
 }
 #sectionCliente h1{ /*esse h1 ocupa 100% da largura da section por isso os prox elementos vão pra baixo */
     text-align: center;
@@ -264,4 +277,87 @@ a.botao{ /*elemento a . classe, ta procurando a classe botão que está dentro d
 }
 #rodape_nav li a{ 
     padding: 5px 0;
+}
+.titulo_quemsomos{
+    width: 100%;
+    text-align: center;
+    background: white;
+}
+#quem_somos, #entrega{
+    width: 980px;
+    height: 350;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 0px;
+    column-gap: 0px;
+}
+
+#entrega{
+    margin-bottom: 50px;
+}
+.empresa img{
+    border-radius: 20px;
+}
+#quem_somos .texto, #entrega .texto{
+    width: 350px;
+    text-align:justify;
+    margin: 0;
+    padding: 10px;
+    color: orange;
+}
+.faixa_branca{
+    width: 100%;
+    height: 30;
+    background-color: white;
+}
+.caminhoes, .smartphone {
+    width: 980px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.caminhoes h1, .smartphone h1 {
+    text-align: left;
+    color: orange;
+}
+.avioes, .rastreamento{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 0px;
+    column-gap: 0px;
+}
+.avioes h1, .rastreamento h1{
+    width: 100%;
+    margin-top: 20px;
+    color: orange;
+}
+.avioes p, .rastreamento p{
+    width: 540px;
+    text-align: justify;
+}
+
+.smartphone {
+    margin-top: 20px;
+}
+.fundo{
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 20px;
 }
