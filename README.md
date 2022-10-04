@@ -1,1 +1,1 @@
-<h2>Exercícios da disciplina de HTML/CSS do curso ENTRA-21</h2>
+Exercícios da disciplina de HTML/CSS do curso ENTRA-21
